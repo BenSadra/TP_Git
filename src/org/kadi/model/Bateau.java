@@ -15,15 +15,13 @@ public class Bateau implements Serializable {
 	 */
 	private static final long serialVersionUID = -7473787322913073961L;
 
-
-
 	private Long id;
 	
 	private String nom;
 	
 	private List<Marin> equipage=new ArrayList<Marin>();
 
-
+	private Statut statut; 
 
 		
 		public Bateau() {
@@ -66,6 +64,16 @@ public class Bateau implements Serializable {
 		
 		public void removeMarin(Marin m){
 			this.equipage.remove(m);
+		}
+
+		
+		
+		public Statut getStatut() {
+			return statut;
+		}
+
+		public void setStatut(Statut statut) {
+			this.statut = statut;
 		}
 
 		@Override
