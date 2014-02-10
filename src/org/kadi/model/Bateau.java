@@ -10,21 +10,20 @@ import java.util.List;
 
 public class Bateau implements Serializable {
 
-		 
-
-		 /**
+			 /**
 	 * 
 	 */
 	private static final long serialVersionUID = -7473787322913073961L;
 
 
-	     private Long id;
-		private String nom;
-
-	     private List<Marin> equipage=new ArrayList<Marin>();
+	private Long id;
+	
+	private String nom;
+	
+	private List<Marin> equipage=new ArrayList<Marin>();
 
 		
-	 public Bateau() {
+		public Bateau() {
 			super();
 			// TODO Auto-generated constructor stub
 		}
@@ -59,10 +58,12 @@ public class Bateau implements Serializable {
 	
 		public void addMarin(Marin m)
 		{
-			
-			equipage.add(m);
+			this.equipage.add(m);
 		}
-
+		
+		public void removeMarin(Marin m){
+			this.equipage.remove(m);
+		}
 		@Override
 		public String toString() {
 			return "Bateau [nom=" + nom + "]";
