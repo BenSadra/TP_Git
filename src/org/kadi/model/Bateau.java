@@ -30,8 +30,9 @@ public class Bateau implements Serializable {
 	private static final long serialVersionUID = -7473787322913073961L;
 
 
+	   
 	    @XmlAttribute
-	     private Long id;
+	     private long id;
 
 		 
 	    @XmlElement(name="nom")
