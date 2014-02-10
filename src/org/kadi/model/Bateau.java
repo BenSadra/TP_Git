@@ -16,11 +16,14 @@ public class Bateau implements Serializable {
 	private static final long serialVersionUID = -7473787322913073961L;
 
 
+
 	private Long id;
 	
 	private String nom;
 	
 	private List<Marin> equipage=new ArrayList<Marin>();
+
+
 
 		
 		public Bateau() {
@@ -64,9 +67,11 @@ public class Bateau implements Serializable {
 		public void removeMarin(Marin m){
 			this.equipage.remove(m);
 		}
+
 		@Override
 		public String toString() {
-			return "Bateau [nom=" + nom + "]";
+			return "Bateau [id=" + id + ", nom=" + nom + "]";
 		}
+	
 		
 }
