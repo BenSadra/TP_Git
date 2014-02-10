@@ -11,16 +11,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 
 
-@XmlRootElement(name="marin", namespace="http://www.kadi.org/tp-jaxb")
-@XmlAccessorType(XmlAccessType.FIELD)
-
 public class Marin implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@XmlAttribute(name="id")
+	
 	private long id;
 	
 	private String nom;
